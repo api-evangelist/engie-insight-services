@@ -1,8 +1,24 @@
 aid: engie-insight-services
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/engie-insight-services.png
 name: ENGIE Insight Services
-description: ENGIE Insight Services is a company surfaced as a portfolio company of insight-partners and
-  added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: ENGIE Insight Services (formerly Ecova, now operating as ENGIE Impact) is a sustainability
+  and resource-management company that helps corporations, cities, and governments reduce their environmental
+  footprint and operating costs. It provides energy, water, and waste expense management, utility bill
+  auditing and payment, data management, sustainability consulting, and decarbonization strategy across
+  a large portfolio of client sites. Surfaced as a portfolio company of Insight Partners and added to the
+  API Evangelist network, this profile has been enriched with domain-security and discovery probes; the
+  company publishes no public developer API surface at the time of enrichment.
 url: https://raw.githubusercontent.com/api-evangelist/engie-insight-services/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,9 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Energy
+- Sustainability
+- Resource Management
+- Utilities
+- Data Management
+- Consulting
+- Decarbonization
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +45,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/engie-insight-services-domain-security.yml
 - type: Website
-  url: http://www.ecova.com/
+  url: https://www.engieimpact.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
